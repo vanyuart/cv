@@ -1,0 +1,219 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+    \vspace{-\baselineskip} % Required for vertically aligning minipages
+
+    % If your name is very short, use just one of the lines below
+    % If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+    \colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Artem}}}}} % First name
+
+    \colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Vanyukhin}}}}} % Last name
+
+    \vspace{6pt}
+
+    {\huge Full Stack Software Engineer } % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+    \vspace{-\baselineskip} % Required for vertically aligning minipages
+
+    % The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+    % Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+    \icon{MapMarker}{12}{Prague, CZ}\\
+    \icon{Phone}{12}{+420 773 630 896}\\
+    \icon{At}{12}{\href{mailto:v96artem@gmail.com}{v96artem@gmail.com}}\\
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+    \vspace{-\baselineskip} % Required for vertically aligning minipages
+
+    % The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+    % Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+    \icon{LinkedinSquare}{12}{\href{https://www.linkedin.com/in/artem-vanyukhin/}{artem.vanyukhin}}\\
+    \icon{Github}{12}{\href{https://github.com/vanyuart}{github.com/vanyuart}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Who Am I?}
+
+\begin{minipage}[t]{0.27\textwidth} % 40% of the page width for the introduction text
+    \vspace{-\baselineskip} % Required for vertically aligning minipages
+    Avid learner with an imperative for challenging tasks.
+    Open to responsibilities.
+    Adaptable to various work environments.
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.73\textwidth} % 50% of the page for the skills bar chart
+    \vspace{-\baselineskip} % Required for vertically aligning minipages
+    \begin{barchart}{5.5}
+        \baritem{Java}{100}
+        \baritem{Kotlin}{90}
+        \baritem{JavaScript (React, Knockout, Vanilla)}{95}
+        \baritem{TypeScript}{45}
+        \baritem{Node.js}{30}
+        \baritem{C\#}{65}
+        \baritem{.NET}{45}
+        \baritem{SQL (Oracle, Postgres, MySQL)}{85}
+        \baritem{NoSQL (MongoDB)}{70}
+    \end{barchart}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+    \entry
+    {2/2020 -- Present}
+    {Backend developer}
+    {ČSOB via Neon IT}
+    {
+        Joined ČSOB as an external employee via NeonIT.
+        I am a member of the development team on several projects.\\
+
+        \textbf{CIM (Client Identity Management)}\\
+        Internal system used by the majority of ČSOB applications.
+        Manages clients personal data, their accounts' information, available authorization methods, signed documents etc.\\
+
+        \textbf{BankID}\\
+        Access to Citizen Portal via ČSOB identity.\\
+
+        \textbf{CAT (Credits Approvals Transactions)}\\
+        Management of cards' limits, account access authorization etc.
+        This project was written purely in Kotlin.\\
+
+        \texttt{Java}\slashsep
+        \texttt{Kotlin}\slashsep
+        \texttt{Spring}\slashsep
+        \texttt{OracleSQL}\slashsep
+        \texttt{RabbitMQ}\slashsep
+        \texttt{Kafka}\\
+    }
+    \entry
+    {2/2017 -- 1/2020}
+    {Full stack Java developer}
+    {Omax Holding}
+    {
+        Started at Omax as a member of the development team on NaseStravenka.
+        Later was assigned to manage the development of a CRM subsystem.
+        I had to meet with the client and was responsible for requirements collection.
+        Closer to the final stage of the project I started learning .NET and was assigned to ProductAds project.\\
+
+        \textbf{NaseStravenka (Lidl)}\\
+        Project consisted of multiple systems: REST API, web for clients, internal portal for employees, CMS etc.
+        At the later stage I was assigned to develop CRM subsystem for the portal.
+
+        \texttt{Java}\slashsep
+        \texttt{Spring}\slashsep
+        \texttt{Hibernate}\slashsep
+        \texttt{Oracle SQL}\slashsep
+        \texttt{Knockout.js}\slashsep
+        \texttt{Thymeleaf}\\
+
+        \textbf{ProductAds (Heureka)}\\
+        ProductAds is a system for ads auctions and management on Heureka (CZ/SK/HU).
+        My main task was to set up dockerized ELK stack for monitoring and to learn .NET as I go.
+
+        \texttt{.NET}\slashsep
+        \texttt{MongoDB}\slashsep
+        \texttt{MySQL}\slashsep
+        \texttt{Docker}\slashsep
+        \texttt{ELK}\slashsep
+        \texttt{Prometheus}\slashsep
+        \texttt{Grafana}\\
+    }
+\end{entrylist}
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+    \entry
+    {2019 -- 2021}
+    {Bachelor's Degree}
+    {CTU In Prague, FEL}
+    {
+        I am finishing my Bc. degree alongside a full time job.
+        My bachelor's thesis is a web application for personal development written in Kotlin with Spring on backend and React.js with Material UI on frontend.
+    }
+
+    \entry
+    {2016 -- 2018}
+    {Bachelor's Degree}
+    {CTU In Prague, FEL}
+    {
+        I had to terminate studies on my 3rd year due to career opportunity.
+        At the university I had the opportunity to learn C++ which deepened my overall knowledge of CS.
+    }
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+    \vspace{-\baselineskip} % Required for vertically aligning minipages
+
+    \cvsect{Languages}
+
+    \textbf{Russian} - native\\
+    \textbf{Czech} - advanced\\
+    \textbf{English} - advanced
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.7\textwidth}
+    \vspace{-\baselineskip} % Required for vertically aligning minipages
+
+    \cvsect{Hobbies}
+
+    These are just few of my many hobbies.
+    I enjoy cooking, especially baking.
+    I am passionate about music and I play several musical instruments.
+
+\end{minipage}
+\hfill
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
